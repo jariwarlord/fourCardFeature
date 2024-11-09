@@ -16,15 +16,16 @@ body {
 .header .first{
     font-weight: 200;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.8em;
 }
 .header h1{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.8em;
 }
 p{
     font-weight: 200;
     text-align: center;
+    padding-bottom: 3em;
 }  
 .attribution {
      font-size: 11px; text-align: center; 
@@ -37,16 +38,32 @@ p{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding-top: 3em;
 }
 .box-1, .box-2, .box-3, .box-4{
     background-color: var(--very-light-gray);
     display: flex;
     flex-direction: column;
-    border: 1px solid;
-    box-shadow: 2px;
-    border-top: 3px solid;
+    align-self: center;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-width: 0.3cap;
+    border-radius: 2%;
+    width: 90%;
+}
+.box-1 p,.box-2 p,.box-3 p,.box-4 p {
+    text-align: left;
+    padding-left: 2em; 
+    font-weight: 200;
+    padding-right: 1em;
+}
+.box-1 h1,.box-2 h1,.box-3 h1,.box-4 h1 {
+    text-align: left;
+    padding-left: 1em; 
 }
 .box-1{
+    
     border-top-color: cyan;
 }
 .box-2{
@@ -59,6 +76,9 @@ p{
     border-top-color: blue;
 }
 .photo{
+    position: relative;
+    bottom: 2em;
+    right: 2em;
     align-self: flex-end;
 }
 
