@@ -19,6 +19,7 @@ body {
     font-size: 1.8em;
 }
 .header h1{
+    padding-top: 0;
     text-align: center;
     font-size: 1.8em;
 }
@@ -54,7 +55,7 @@ p{
 }
 .box-1 p,.box-2 p,.box-3 p,.box-4 p {
     text-align: left;
-    padding-left: 2em; 
+    padding-left: 2em;  
     font-weight: 200;
     padding-right: 1em;
 }
@@ -83,13 +84,127 @@ p{
 }
 
 @media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
+    body {
+        font-size: 18px;
+        height: 100vh;
+    }
+    .page {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;  
+    }
+    .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;  
+    }
+    .mid-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+    margin: 0 0em;  
+    }
+    .box-1, .box-2, .box-3, .box-4 {
+    width: 20em;
+    min-width: 20em;  
+    min-height: 200px; 
+    padding: 1.5em;  
+    }
+        
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p {
+    margin-bottom: 2em;
+    padding: 0;
+    margin: 0;  
+    }
+       
+    .box-1 h1, .box-2 h1, .box-3 h1, .box-4 h1 {
+    padding: 0;
+    font-size: 1.2em;
+    margin: 0;
+    }
+    .photo{
+    position: relative;
+    bottom: 0.3em;
+    right: 0.5em;
+    top: 1.4em;
+    align-self: flex-end;
+    }
+    .first{
+    display: none;
+    }
+    .first-header{
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-weight: 200;
+    }
 }
 
 @media (min-width: 1440px) {
-  body {
-    font-size: 18px;
+    body {
+     font-size: 18px;
+    }
+    .page {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding-top: 0;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1200px;  
+      height: 100vh;
+    }
+    .boxes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2em;  
+    }
+    .mid-boxes {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 2em;
+      margin: 0 0em;  
+    }
+    .box-1, .box-2, .box-3, .box-4 {
+        width: 20em;
+        min-width: 20em;  
+        min-height: 200px; 
+        padding: 1.5em;  
+      }
+      
+      .box-1 p, .box-2 p, .box-3 p, .box-4 p {
+        margin-bottom: 2em;
+        padding: 0;
+        margin: 0;  
+      }
+      
+      .box-1 h1, .box-2 h1, .box-3 h1, .box-4 h1 {
+        padding: 0;
+        font-size: 1.2em;
+        margin: 0;
+      }
+      .photo{
+        position: relative;
+        bottom: 0.3em;
+        right: 0.5em;
+        top: 1.4em;
+        align-self: flex-end;
+    }
+    .first{
+        display: none;
+    }
+    .first-header{
+        margin-top: 2em;
+        margin-bottom: 0;
+        font-weight: 200;
+    }
   }
-}
